@@ -270,7 +270,7 @@ window.addEventListener("load", () => {
        vec4 displacement = texture2D(displacementTexture, textureCoords);
 
        // displace along Y axis
-       textureCoords.y += (sin(displacement.r) / 5.0) * uDisplacement;
+       textureCoords.y += (sin(displacement.r) / 4.0) * uDisplacement;
        
        //gl_FragColor = texture2D(uRenderTexture, textureCoords);
        
